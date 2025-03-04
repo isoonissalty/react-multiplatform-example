@@ -1,0 +1,33 @@
+{
+  "name": "@react-multiplatform-example/mobile",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-multiplatform-example/shared": "*",
+    "react": "^18.2.0",
+    "react-native": "^0.72.1",
+    "@react-navigation/native": "^6.1.7",
+    "@react-navigation/stack": "^6.3.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/runtime": "^7.22.6",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@types/react": "^18.2.15",
+    "@types/react-native": "^0.72.2",
+    "babel-jest": "^29.6.1",
+    "eslint": "^8.44.0",
+    "jest": "^29.6.1",
+    "metro-react-native-babel-preset": "^0.77.0",
+    "react-test-renderer": "18.2.0",
+    "typescript": "^5.1.6"
+  }
+}

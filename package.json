@@ -1,0 +1,40 @@
+{
+  "name": "react-multiplatform-example",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:web": "yarn workspace @react-multiplatform-example/web dev",
+    "build:web": "yarn workspace @react-multiplatform-example/web build",
+    "start:mobile": "yarn workspace @react-multiplatform-example/mobile start",
+    "android": "yarn workspace @react-multiplatform-example/mobile android",
+    "ios": "yarn workspace @react-multiplatform-example/mobile ios",
+    "start:desktop": "yarn workspace @react-multiplatform-example/desktop start",
+    "build:desktop": "yarn workspace @react-multiplatform-example/desktop package",
+    "test": "lerna run test --stream",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "bootstrap": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.0",
+    "@eslint/js": "^9.21.0",
+    "@typescript-eslint/eslint-plugin": "^8.26.0",
+    "@typescript-eslint/parser": "^8.26.0",
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "lerna": "^6.6.2",
+    "prettier": "^3.5.3",
+    "typescript": "^5.1.6",
+    "typescript-eslint": "^8.26.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
