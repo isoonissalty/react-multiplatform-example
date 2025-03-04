@@ -7,7 +7,7 @@ module.exports = {
     // Let webpack resolve modules in the shared package
     config.resolve.alias = {
       ...config.resolve.alias,
-      '@react-multiplatform-example/shared': path.resolve(__dirname, '../shared/src'),
+      '@root/shared': path.resolve(__dirname, '../shared/src'),
     };
 
     return config;

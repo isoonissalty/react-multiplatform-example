@@ -1,1 +1,16 @@
 node_modules
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.webpack/
+
+# Coverage directory
+coverage/
+
+# Logs
+logs

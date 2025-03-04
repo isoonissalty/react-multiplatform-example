@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": ".webpack",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@root/shared/*": ["../shared/src/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+} 

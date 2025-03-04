@@ -2,8 +2,8 @@ const path = require('path');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
-  entry: './src/main/index.ts',
-  target: 'electron-main',
+  entry: './src/renderer/index.tsx',
+  target: 'web',
   devtool: 'source-map',
   module: {
     rules: [
@@ -16,6 +16,14 @@ module.exports = {
             transpileOnly: true,
           },
         },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
       },
     ],
   },
@@ -32,4 +40,7 @@ module.exports = {
       '@root/shared': path.resolve(__dirname, '../shared/src'),
     },
   },
-};
+  output: {
+    publicPath: './',
+  },
+}; 

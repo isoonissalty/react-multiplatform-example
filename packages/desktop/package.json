@@ -14,8 +14,7 @@
     "@react-multiplatform-example/shared": "*",
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "next": "^13.4.9"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.2.1",
@@ -29,10 +28,13 @@
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
+    "css-loader": "^6.8.1",
     "electron": "^25.2.0",
     "eslint": "^8.44.0",
     "fork-ts-checker-webpack-plugin": "^8.0.0",
     "node-loader": "^2.0.0",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
     "typescript": "^5.1.6"
   }
 }
