@@ -1,21 +1,4 @@
 {
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "start",
-          "lint",
-          "android",
-          "ios",
-          "test",
-          "build",
-          "dev"
-        ],
-        "accessToken": "NWJiZGJjY2MtMTEyZC00MjFiLWE2ZTItMGU1ZDUzZmI5MThmfHJlYWQtd3JpdGU="
-      }
-    }
-  },
   "targetDefaults": {
     "start": {
       "dependsOn": [
