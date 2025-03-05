@@ -1,0 +1,77 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "start",
+          "lint",
+          "android",
+          "ios",
+          "test",
+          "build",
+          "dev"
+        ],
+        "accessToken": "NWJiZGJjY2MtMTEyZC00MjFiLWE2ZTItMGU1ZDUzZmI5MThmfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDefaults": {
+    "start": {
+      "dependsOn": [
+        "^start"
+      ]
+    },
+    "publish": {
+      "dependsOn": [
+        "^publish"
+      ]
+    },
+    "lint": {
+      "dependsOn": [
+        "^lint"
+      ]
+    },
+    "android": {
+      "dependsOn": [
+        "^android"
+      ],
+      "outputs": [
+        "{projectRoot}/build"
+      ]
+    },
+    "ios": {
+      "dependsOn": [
+        "^ios"
+      ],
+      "outputs": [
+        "{projectRoot}/build"
+      ]
+    },
+    "test": {
+      "dependsOn": [
+        "^test"
+      ],
+      "outputs": [
+        "{projectRoot}/coverage"
+      ]
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "{projectRoot}/build"
+      ]
+    },
+    "dev": {
+      "dependsOn": [
+        "^dev"
+      ],
+      "outputs": [
+        "{projectRoot}/build"
+      ]
+    }
+  },
+  "defaultBase": "main"
+}
